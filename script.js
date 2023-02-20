@@ -45,17 +45,32 @@ clearButton.addEventListener('click', () => {
 
 resultButton.addEventListener('click', () => {
     const calculate = displayValue.split(' ');
-    const num1 = parseInt(calculate[0]);
-    const operator = calculate[1];
-    const num2 = parseInt(calculate[2]);
-    const result = operate(operator, num1, num2);
+    let result = parseInt(calculate[0]);
+    let operator = null;
+    for (let i = 1; i < calculate.length; i++) {
+        const token = calculate[i];
+        if (['+', '-', '*', '/'].includes(token)) {
+            operator = token;
+        } else {
+            const num = parseInt(token);
+            if (operator === '+') {
+                result = add(result, num);
+            } else if (operator === '-') {
+                result = subtract(result, num);
+            } else if (operator === '*') {
+                result = multiply(result, num);
+            } else if (operator === '/') {
+                result = divide(result, num);
+            }
+        }
+    }
     displayValue = result.toString();
     display.textContent = displayValue;
-})
+});
 
 function add(num1, num2) {
-    return (num1 + num2)
-}
+    return (num1 + num2);
+};
 
 function subtract(num1, num2) {
     return (num1 - num2)
