@@ -6,7 +6,12 @@ const operationButtons = document.querySelectorAll('.operationButtons');
 
 let displayValue = ''
 
-
+cancelButton.addEventListener('click', () => {
+    let valueArray = displayValue.split('')
+    valueArray.pop()
+    displayValue = valueArray.join('')
+    display.textContent = displayValue
+})
 
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
