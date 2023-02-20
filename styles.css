@@ -1,0 +1,82 @@
+* {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: large;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    min-width: 40vw;
+    min-height: 60vh;
+    padding: 30px;
+    background-color: aqua;
+
+}
+#display {
+    background-color: grey;
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 25px;
+}
+
+#buttons {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr); 
+}
+/* Position buttons */
+#resultButton{
+    grid-column: 4;
+    grid-row: 5;
+}
+
+#numberZeroButton {
+    grid-column: 1 / 4;
+    grid-row: 5;
+}
+#numberOneButton {
+    grid-column: 1;
+    grid-row: 4;
+}
+#numberTwoButton {
+    grid-column: 2;
+    grid-row: 4;
+}
+#numberThreeButton {
+    grid-column: 3;
+    grid-row: 4;
+}
+#numberFourButton {
+    grid-column: 1;
+    grid-row: 3;
+}
+#numberFiveButton {
+    grid-column: 2;
+    grid-row: 3;
+}
+#numberSixButton{
+    grid-column: 3;
+    grid-row: 3;
+}
+#numberSevenButton {
+    grid-column: 1;
+    grid-row: 2;
+
+}
+#numberEightButton {
+    grid-column: 2;
+    grid-row: 2;
+}
+#numberNineButton {
+    grid-column: 3;
+    grid-row: 2;
+}
