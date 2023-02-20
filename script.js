@@ -20,7 +20,14 @@ const display = document.querySelector('#display');
 const numberButtons = document.querySelectorAll('.numberButtons');
 const operationButtons = document.querySelectorAll('.operationButtons');
 
+let displayValue = ''
 
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        displayValue += button.textContent
+        display.textContent = displayValue
+    });
+});
 
 function add(num1, num2) {
     return (num1 + num2)
