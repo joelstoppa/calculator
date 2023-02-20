@@ -78,3 +78,19 @@ body {
     grid-column: 3;
     grid-row: 2;
 }
+#plusButton {
+    grid-column: 4;
+    grid-row: 4;
+}
+#clearButton {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+#minusButton {
+    grid-column: 4;
+    grid-row: 3;
+}
+#multiplyButton {
+    grid-column: 4;
+    grid-row: 2;
+}
