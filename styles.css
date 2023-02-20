@@ -38,7 +38,6 @@ body {
     grid-column: 4;
     grid-row: 5;
 }
-
 #numberZeroButton {
     grid-column: 1 / 4;
     grid-row: 5;
@@ -70,7 +69,6 @@ body {
 #numberSevenButton {
     grid-column: 1;
     grid-row: 2;
-
 }
 #numberEightButton {
     grid-column: 2;
