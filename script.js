@@ -22,6 +22,8 @@ const operationButtons = document.querySelectorAll('.operationButtons');
 
 let displayValue = ''
 
+
+
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         displayValue += button.textContent
@@ -29,9 +31,26 @@ numberButtons.forEach(button => {
     });
 });
 
+operationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        displayValue += ` ${button.textContent} `
+        display.textContent = displayValue
+    })
+})
+
 clearButton.addEventListener('click', () => {
     displayValue = ''
     display.textContent = displayValue
+})
+
+resultButton.addEventListener('click', () => {
+    const calculate = displayValue.split(' ');
+    const num1 = parseInt(calculate[0]);
+    const operator = calculate[1];
+    const num2 = parseInt(calculate[2]);
+    const result = operate(operator, num1, num2);
+    displayValue = result.toString();
+    display.textContent = displayValue;
 })
 
 function add(num1, num2) {
