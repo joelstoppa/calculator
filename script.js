@@ -16,6 +16,10 @@ const divideButton = document.querySelector('#divideButton');
 const percentButton = document.querySelector('#percentButton');
 const plusMinusButton = document.querySelector('#plusMinusButton');
 const clearButton = document.querySelector('#clearButton');
+const display = document.querySelector('#display');
+const numberButtons = document.querySelectorAll('.numberButtons');
+const operationButtons = document.querySelectorAll('.operationButtons');
+
 
 
 function add(num1, num2) {
@@ -48,3 +52,4 @@ function operate(operator, num1, num2) {
         return divide(num1, num2)
     }
 }
+
