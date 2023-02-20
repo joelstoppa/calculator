@@ -29,6 +29,11 @@ numberButtons.forEach(button => {
     });
 });
 
+clearButton.addEventListener('click', () => {
+    displayValue = ''
+    display.textContent = displayValue
+})
+
 function add(num1, num2) {
     return (num1 + num2)
 }
