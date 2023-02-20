@@ -66,6 +66,9 @@ function multiply (num1, num2) {
 }
 
 function divide(num1, num2) {
+    if (num2 === 0){
+        return `CAN\'T DIVIDE BY ZERO`
+    }
     return (num1 / num2)
 }
 
