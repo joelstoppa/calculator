@@ -2,15 +2,17 @@
     font-family: "Roboto Mono", sans-serif;
     font-size: large;
 }
-body {
+#page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 #container {
     display: flex;
     flex-direction: column;
-    min-width: 40vw;
+    max-width: 40vw;
     min-height: 60vh;
     padding: 30px;
     background-color: aqua;
@@ -28,7 +30,7 @@ body {
 }
 
 #buttons {
-    flex: 1;
+    flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,1fr); 
