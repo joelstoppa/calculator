@@ -16,12 +16,14 @@
     width: 400px;
     min-height: 500px;
     padding: 30px;
-    background-color: aqua;
+    background-color: rgb(124, 124, 124);
     border: 2px black solid;
+    border-radius: 10px;
+    box-shadow: 8px 5px 1px red;
 
 }
 #display {
-    background-color: grey;
+    background-color: rgb(241, 238, 238);
     min-height: 70px;
     margin-bottom: 20px;
     padding: 15px;
@@ -29,13 +31,33 @@
     align-items: center;
     justify-content: end;
     font-size: 35px;
+    border: 2px black solid;
+    border-radius: 5px;
 }
 
 #buttons {
     flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,1fr); 
+    grid-template-rows: repeat(5,1fr);
+    gap: 8px;
+    
+}
+
+.numberButtons {
+    background-color: rgb(241, 238, 238);
+}
+
+.operationButtons,
+#resultButton {
+    background-color: rgb(250, 181, 181);
+}
+
+#clearButton {
+    background-color: rgb(178, 238, 238);
+}
+#cancelButton {
+    background-color: rgb(215, 184, 250);
 }
 
 #footer {
