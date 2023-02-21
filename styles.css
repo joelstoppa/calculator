@@ -21,13 +21,13 @@
 }
 #display {
     background-color: grey;
-    min-height: 50px;
+    min-height: 70px;
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: end;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #buttons {
